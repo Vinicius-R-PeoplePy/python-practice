@@ -22,8 +22,8 @@
 #x = -87.7e100
 #print(x) resultado = -8.77e+101 #o que aconteceu neste caso? *pesquisar*... 
 
-x = 1y
-print(type(x)) #-> x = 1y não funciona para tornar isto um tipo de "complex number"; retorna "SyntaxError: invalid syntax"; pois o número só se torna complexo quando acrescido da letra "j"... 
+#x = 1y
+#print(type(x)) #-> x = 1y não funciona para tornar isto um tipo de "complex number"; retorna "SyntaxError: invalid syntax"; pois o número só se torna complexo quando acrescido da letra "j"... 
 
 
 
