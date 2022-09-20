@@ -182,14 +182,17 @@
 # txt = "Hello World"
 # txt = txt.replace("H", "J")
 
-#txt = "Números randômicos teste, testando randomicidade."
-#txt = txt.replace("Números randômicos teste,", "print(random.randrange()) para gerar números aleatórios...")
-#print (txt) 
+txt = "Números randômicos teste, testando randomicidade."
+txt = txt.replace("Números randômicos teste,", "print(random.randrange()) para gerar números aleatórios...")
+print (txt) 
+
+import random
+print(random.randrange(1, 100))
 
 # Ideias para dicionário. 
 # Texto base https://metrologia.org.br/wpsite/wp-content/uploads/2019/07/Cartilha_O_novo_SI_29.06.2029.pdf
 # O dicionário conterá medidas do SI (Sistema Internacional de Unidades), como, por exemplo, a definição de que kilograma é a massa de um dl cúbico de água, ou 1 milésimo de 1 metro cúbico de água. 
-# SI -> Sistema Internacional de Medidas, criado após a revolução frances, pela Convenção do Metro, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM), realizada em 1960.
+# SI -> Sistema Internacional de Medidas, criado após a revolução francesa, pela Convenção do Metro, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM), realizada em 1960.
 # CGPM -> Conferência Geral de Pesos e Medidas
 # Para a definição de SI: possui sete unidades de base: o metro (comprimento), o kilograma (massa), o segundo (tempo), o ampere (corrente elétrica), o kelvin (temperatura termodinâmica), o mol (quantidade de substância) e a candela (intensidade luminosa)
 # www.bipm.org/en/about-us/member-states/.
