@@ -182,13 +182,13 @@
 # txt = "Hello World"
 # txt = txt.replace("H", "J")
 
-txt = "Números randômicos teste, testando randomicidade."
-txt = txt.replace("Números randômicos teste,", "print(random.randrange()) para gerar números aleatórios...")
-print (txt) 
+#txt = "Números randômicos teste, testando randomicidade."
+#txt = txt.replace("Números randômicos teste,", "print(random.randrange()) para gerar números aleatórios...")
+#print (txt) 
 
-import random
+#import random
 
-print(random.randrange(1, 100))
+#print(random.randrange(1, 100))
 
 # Ideias para dicionário. 
 # Texto base https://metrologia.org.br/wpsite/wp-content/uploads/2019/07/Cartilha_O_novo_SI_29.06.2029.pdf
@@ -204,109 +204,206 @@ print(random.randrange(1, 100))
 # Para definição de Césio -> O Césio é um elemento químico de símbolo Cs e número atômico 55, com massa atômica de 132,9 u. É obtido por fissão nuclear de outros radioisótopos de urânio ou plutônio. 
 # Para definição de urânio e plutônio...
 
-txt = "xxx, yyy"
-txt = txt.replace("xxx", "zzz")
-print(txt)
+#txt = "xxx, yyy"
+#txt = txt.replace("xxx", "zzz")
+#print(txt)
 
 #28-09-2022
 
-a = "Hello, World!"
-b = "      Hello            World      "
-c = a.split(",")
-d = a.split("e")
-e = "Hello"
-f = "World"
-g = e + f 
-h = e + " " + f 
-i = e + "\n" + f 
+#a = "Hello, World!"
+#b = "      Hello            World      "
+#c = a.split(",")
+#d = a.split("e")
+#e = "Hello"
+#f = "World"
+#g = e + f 
+#h = e + " " + f 
+#i = e + "\n" + f 
 
-print(a.upper())
-print(a.lower())
-print(b.strip()) #not stripping (?)
-print(c)
-print(d)
-print(g)
-print(h)
-print(i)
+#print(a.upper())
+#print(a.lower())
+#print(b.strip()) #not stripping (?)
+#print(c)
+#print(d)
+#print(g)
+#print(h)
+#print(i)
 
 
 # age = 175
 #txt = "My name is Abraham, I am" + age 
 #print(txt) #-> this will give error, due to the impossibility of combining strings and numbers in such a way. 
 
-age = 175 
-txt = "My name is Abraham, I am {}"
-print(txt.format(age))
+#age = 175 
+#txt = "My name is Abraham, I am {}"
+#print(txt.format(age))
 
-quantity = 3 
-itemno = 555
-price = 77.77
-myorder = "I want {} pieces of item {} for {} dollars"
-print(myorder.format(quantity, itemno, price))
+#quantity = 3 
+#itemno = 555
+#price = 77.77
+#myorder = "I want {} pieces of item {} for {} dollars"
+#print(myorder.format(quantity, itemno, price))
 
-quantity = 5 
-itemno = 188 
-price = 50 
-myorder2 = "I want to pay {2} dollars for {0} pieces of item {1}"
-print(myorder2.format(quantity, itemno, price))
+#quantity = 5 
+#itemno = 188 
+#price = 50 
+#myorder2 = "I want to pay {2} dollars for {0} pieces of item {1}"
+#print(myorder2.format(quantity, itemno, price))
 
-txt2 = "We are the so-called \"Vikings\" from the north."
-print(txt2)
+#txt2 = "We are the so-called \"Vikings\" from the north."
+#print(txt2)
 
-txt3 = 'It\'s alright.' 
-print(txt3)
+#txt3 = 'It\'s alright.' 
+#print(txt3)
 
-txt5 = "This will insert one \\ (backslash)."
-print(txt5)
+#txt5 = "This will insert one \\ (backslash)."
+#print(txt5)
 
-txt6 = "Hello\rWorld!"
-print(txt6)
+#txt6 = "Hello\rWorld!"
+#print(txt6)
 
-txt7 = "Hello\tWorld!"
-print(txt)
+#txt7 = "Hello\tWorld!"
+#print(txt7)
 
-txt8 = "Hello \bWorld!"
-print(txt8)
+#txt8 = "Hello \bWorld!"
+#print(txt8)
 
-txt9 = "\110\145\154\154\157" # A backslash followed by three integers will result in a octal value in this case. 
-print(txt9)
+#txt9 = "\110\145\154\154\157" # A backslash followed by three integers will result in a octal value in this case. 
+#print(txt9)
 
-txt10 = "\x48\x65\x6c\x6c\x6f" # A backslash followed by an 'x' and a hex number represents a hex value.
-print(txt10)
+#txt10 = "\x48\x65\x6c\x6c\x6f" # A backslash followed by an 'x' and a hex number represents a hex value.
+#print(txt10)
 
 #check-> https://www.sciencebuddies.org/science-fair-projects/references/ascii-table
 
-k = "diskpart list disk select disk x clean convert gpt create part efi size=500 format fs=fat32 assign letter w create part primary format fs=ntfs quick assign letter c exit"
-l = "UNIVERSAL SERIAL BUS"
-m = "                  cd/d D:\sources"
+#k = "diskpart list disk select disk x clean convert gpt create part efi size=500 format fs=fat32 assign letter w create part primary format fs=ntfs quick assign letter c exit"
+#l = "UNIVERSAL SERIAL BUS"
+#m = "                  cd/d D:\sources"
 
-print(k.capitalize())
-print(l.casefold())
+#print(k.capitalize())
+#print(l.casefold())
 #print(m.center()) #????
-print(k.count("a"))
-print(k.count("d"))
-print(k.encode(encoding="ascii", errors="replace")) 
+#print(k.count("a"))
+#print(k.count("d"))
+#print(k.encode(encoding="ascii", errors="replace")) 
 
 #encode not functioning. check-> https://www.w3schools.com/python/ref_string_encode.asp
 
-print(l.endswith("s"))
-print(l.endswith("S"))
+#print(l.endswith("s"))
+#print(l.endswith("S"))
 
 #n = "TRINTA\POR\CENTO\DE\CEM\É\IGUAL\A\TRINTA\DIVIDIDO\POR\CEM\VEZES\CEM\QUE\VAI\DAR\O RESULTADO 30\APÓS OPERAÇÃO\PELA REGRA DE 3\OU POR FRAÇÕES EQUIVALENTES"
 #o = n.expandtabs(5)
 #print(o) #expandtabs not functioning as in w3schools. Might be due to different python versions?(...)
 
-print(l.find("BUS"))
-print(l.find("U")) #found just U string in index 0; not also the U in penultimate index 
-print(l.find("L")) 
+#print(l.find("BUS"))
+#print(l.find("U")) #found just U string in index 0; not also the U in penultimate index 
+#print(l.find("L")) 
 
-txt11 = "For only {price:.2f} dollars!"
-print(txt11.format(price = 49))
+#txt11 = "For only {price:.2f} dollars!"
+#print(txt11.format(price = 49))
 
-txt12 = "My name is {fname}, I'm {age}".format(fname = "Knuckles", age = 20)
-txt13 = "My name is {0}, I'm {1}".format("Obi-Wan", 35)
-txt14 = "My name is {}, I'm {}".format("Wally", 36)
-print(txt12, txt13, txt14, sep = '\n')
+#txt12 = "My name is {fname}, I'm {age}".format(fname = "Knuckles", age = 20)
+#txt13 = "My name is {0}, I'm {1}".format("Obi-Wan", 35)
+#txt14 = "My name is {}, I'm {}".format("Wally", 36)
+#print(txt12, txt13, txt14, sep = '\n')
+
+#print("Welcome!")
+#guess = 0 
+#while guess != 5:
+#    g = input("Guess the number: ")
+#    guess = int(g)
+#    if guess == 5:
+#        print("You win! \n Congratulations!")
+#    if guess == 4: 
+#            print("Hmmmm... it's getting hot...")
+#    if guess == 3:
+#            print("Hmmmm... not so bad...")
+#    if guess == 2:
+#            print("Ahhh... not this...")
+#    if guess == 1: 
+#            print("Try again!")
+#    if guess == 0: 
+#            print("It's really really cold...")
+#    if guess == 6:
+#            print("Hmmmm... it's getting hot...")
+#    if guess == 7: 
+#            print("Hmmmm...not so bad... ")
+#    if guess == 8:
+#            print("Ahhh... not this...")
+#    if guess == 9:
+#            print("Try again!")
+#    if guess == 10:
+#            print("Stratosferic!...")
+#else:
+#    print("Game over!")
+
+#answer = "no"
+#while answer == "no": 
+#    answer = input("Are we there?")
+#print("We're there!")
+
+#from random import randint 
+#secret = randint(1,10)
+#print("Welcome!")
+#guess = 0 
+#while guess!= secret:
+#    g = input("Guess the number: ")
+#    guess = int(g)
+#    if guess == secret: 
+#        print("You win!")
+#    else:
+#        if guess > secret: 
+#            print("Too high")
+#        else:
+#            print("Too low")
+#print("Game over!")
+
+#import urllib.request
+
+#page = urllib.request.urlopen("https://www.programiz.com/python-programming/for-loop")
+#text = page.read().decode("utf8")
+
+
+#print(text.find("Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation."))
+#loopinfo = text[76886:77025]
+#print(loopinfo)
+
+#O último index de uma substring é excluído numa contagem, embora o primeiro index seja incluído. 
+
+#where = text.find("Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.")
+
+#start_of_loop_info =  where + 0
+#end_of_loop_info = start_of_loop_info + 138
+
+
+#loopinfo = text[start_of_loop_info:end_of_loop_info]
+
+#print(loopinfo)  
+
+#Reuse code with functions 
+
+def make_smoothie():
+    juice = input("What juice would you like?\n ")
+    fruit = input("Ok - and how about the fruit?\n ")
+    print("Thanks. Let's go!")
+    print("Crushing the ice...")
+    print("Blending the " + fruit)
+    print("Now adding in the " + juice + " juice")
+    print("Finished! There's your " + fruit + " and " + juice + "smoothie!")
+
+print("Welcome to smoothie-matic 2.0")
+another = "Y" 
+while another == "Y":
+        make_smoothie() 
+        another = input("How about another(Y/N)?\n ")
+
+
+
+
+
+
+
 
 
 
