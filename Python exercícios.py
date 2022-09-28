@@ -383,20 +383,42 @@
 
 #Reuse code with functions 
 
-def make_smoothie():
-    juice = input("What juice would you like?\n ")
-    fruit = input("Ok - and how about the fruit?\n ")
-    print("Thanks. Let's go!")
-    print("Crushing the ice...")
-    print("Blending the " + fruit)
-    print("Now adding in the " + juice + " juice")
-    print("Finished! There's your " + fruit + " and " + juice + "smoothie!")
+#def make_smoothie():
+#    juice = input("What juice would you like?\n ")
+#    fruit = input("Ok - and how about the fruit?\n ")
+#    print("Thanks. Let's go!")
+#    print("Crushing the ice...")
+#    print("Blending the " + fruit)
+#    print("Now adding in the " + juice + " juice")
+#    print("Finished! There's your " + fruit + " and " + juice + "smoothie!")
 
-print("Welcome to smoothie-matic 2.0")
-another = "Y" 
-while another == "Y":
-        make_smoothie() 
-        another = input("How about another(Y/N)?\n ")
+#print("Welcome to smoothie-matic 2.0")
+#another = "Y" 
+#while another == "Y":
+#        make_smoothie() 
+#        another = input("How about another(Y/N)?\n ")
+
+thislist =	["0) Antigo kilograma -> definido a partir de um protótipo internacional, um cilindro de uma liga de platina e irídio e essa era a unidade utilizada para determinar a massa de um próton, de um elétron ou de outras partículas elementares.",
+"1) SI -> Sistema Internacional de Medidas, criado após a revolução francesa, pela Convenção do Metro, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM), realizada em 1960.",
+"2) Para a definição de SI: possui sete unidades de base: o metro (comprimento), o kilograma (massa), o segundo (tempo), o ampere (corrente elétrica), o kelvin (temperatura termodinâmica), o mol (quantidade de substância) e a candela (intensidade luminosa)",
+"3) Para a definição de segundo -> é relacionado a um número exato de oscilações na camada eletrônica do átomo de césio (relógio atômico)."]
+
+sort = int(input("Digite um número de [0] a [3] para informações diversas acerca de medidas: "))
+
+if sort == 0:
+    print(thislist[0])
+if sort == 1:
+    print(thislist[1])
+if sort == 2:
+    print(thislist[2])
+if sort == 3:
+    print(thislist[3])
+
+
+
+
+
+
 
 
 
