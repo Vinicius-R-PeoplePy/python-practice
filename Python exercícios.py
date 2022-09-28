@@ -187,6 +187,7 @@ txt = txt.replace("Números randômicos teste,", "print(random.randrange()) para
 print (txt) 
 
 import random
+
 print(random.randrange(1, 100))
 
 # Ideias para dicionário. 
@@ -201,9 +202,122 @@ print(random.randrange(1, 100))
 # Para a definição de segundo -> é relacionado a um número exato de oscilações na camada eletrônica do átomo de césio (relógio atômico).
 # Sobre o relógio atômico -> https://super.abril.com.br/mundo-estranho/como-funciona-o-relogio-atomico/
 # Para definição de Césio -> O Césio é um elemento químico de símbolo Cs e número atômico 55, com massa atômica de 132,9 u. É obtido por fissão nuclear de outros radioisótopos de urânio ou plutônio. 
-# Para definição de urânio e plutônio... 
+# Para definição de urânio e plutônio...
+
+txt = "xxx, yyy"
+txt = txt.replace("xxx", "zzz")
+print(txt)
+
+#28-09-2022
+
+a = "Hello, World!"
+b = "      Hello            World      "
+c = a.split(",")
+d = a.split("e")
+e = "Hello"
+f = "World"
+g = e + f 
+h = e + " " + f 
+i = e + "\n" + f 
+
+print(a.upper())
+print(a.lower())
+print(b.strip()) #not stripping (?)
+print(c)
+print(d)
+print(g)
+print(h)
+print(i)
+
+
+# age = 175
+#txt = "My name is Abraham, I am" + age 
+#print(txt) #-> this will give error, due to the impossibility of combining strings and numbers in such a way. 
+
+age = 175 
+txt = "My name is Abraham, I am {}"
+print(txt.format(age))
+
+quantity = 3 
+itemno = 555
+price = 77.77
+myorder = "I want {} pieces of item {} for {} dollars"
+print(myorder.format(quantity, itemno, price))
+
+quantity = 5 
+itemno = 188 
+price = 50 
+myorder2 = "I want to pay {2} dollars for {0} pieces of item {1}"
+print(myorder2.format(quantity, itemno, price))
+
+txt2 = "We are the so-called \"Vikings\" from the north."
+print(txt2)
+
+txt3 = 'It\'s alright.' 
+print(txt3)
+
+txt5 = "This will insert one \\ (backslash)."
+print(txt5)
+
+txt6 = "Hello\rWorld!"
+print(txt6)
+
+txt7 = "Hello\tWorld!"
+print(txt)
+
+txt8 = "Hello \bWorld!"
+print(txt8)
+
+txt9 = "\110\145\154\154\157" # A backslash followed by three integers will result in a octal value in this case. 
+print(txt9)
+
+txt10 = "\x48\x65\x6c\x6c\x6f" # A backslash followed by an 'x' and a hex number represents a hex value.
+print(txt10)
+
+#check-> https://www.sciencebuddies.org/science-fair-projects/references/ascii-table
+
+k = "diskpart list disk select disk x clean convert gpt create part efi size=500 format fs=fat32 assign letter w create part primary format fs=ntfs quick assign letter c exit"
+l = "UNIVERSAL SERIAL BUS"
+m = "                  cd/d D:\sources"
+
+print(k.capitalize())
+print(l.casefold())
+#print(m.center()) #????
+print(k.count("a"))
+print(k.count("d"))
+print(k.encode(encoding="ascii", errors="replace")) 
+
+#encode not functioning. check-> https://www.w3schools.com/python/ref_string_encode.asp
+
+print(l.endswith("s"))
+print(l.endswith("S"))
+
+#n = "TRINTA\POR\CENTO\DE\CEM\É\IGUAL\A\TRINTA\DIVIDIDO\POR\CEM\VEZES\CEM\QUE\VAI\DAR\O RESULTADO 30\APÓS OPERAÇÃO\PELA REGRA DE 3\OU POR FRAÇÕES EQUIVALENTES"
+#o = n.expandtabs(5)
+#print(o) #expandtabs not functioning as in w3schools. Might be due to different python versions?(...)
+
+print(l.find("BUS"))
+print(l.find("U")) #found just U string in index 0; not also the U in penultimate index 
+print(l.find("L")) 
+
+txt11 = "For only {price:.2f} dollars!"
+print(txt11.format(price = 49))
+
+txt12 = "My name is {fname}, I'm {age}".format(fname = "Knuckles", age = 20)
+txt13 = "My name is {0}, I'm {1}".format("Obi-Wan", 35)
+txt14 = "My name is {}, I'm {}".format("Wally", 36)
+print(txt12, txt13, txt14, sep = '\n')
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
 
