@@ -398,21 +398,138 @@
 #        make_smoothie() 
 #        another = input("How about another(Y/N)?\n ")
 
-thislist =	["0) Antigo kilograma -> definido a partir de um protótipo internacional, um cilindro de uma liga de platina e irídio e essa era a unidade utilizada para determinar a massa de um próton, de um elétron ou de outras partículas elementares.",
-"1) SI -> Sistema Internacional de Medidas, criado após a revolução francesa, pela Convenção do Metro, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM), realizada em 1960.",
-"2) Para a definição de SI: possui sete unidades de base: o metro (comprimento), o kilograma (massa), o segundo (tempo), o ampere (corrente elétrica), o kelvin (temperatura termodinâmica), o mol (quantidade de substância) e a candela (intensidade luminosa)",
-"3) Para a definição de segundo -> é relacionado a um número exato de oscilações na camada eletrônica do átomo de césio (relógio atômico)."]
+#thislist =	["0) Antigo kilograma -> definido a partir de um protótipo internacional, um cilindro de uma liga de platina e irídio e essa era a unidade utilizada para determinar a massa de um próton, de um elétron ou de outras partículas elementares.",
+#"1) SI -> Sistema Internacional de Medidas, criado após a revolução francesa, pela Convenção do Metro, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM), realizada em 1960.",
+#"2) Para a definição de SI: possui sete unidades de base: o metro (comprimento), o kilograma (massa), o segundo (tempo), o ampere (corrente elétrica), o kelvin (temperatura termodinâmica), o mol (quantidade de substância) e a candela (intensidade luminosa)",
+#"3) Para a definição de segundo -> é relacionado a um número exato de oscilações na camada eletrônica do átomo de césio (relógio atômico)."]
 
-sort = int(input("Digite um número de [0] a [3] para informações diversas acerca de medidas: "))
+#sort = int(input("Digite um número de [0] a [3] para informações diversas acerca de medidas: "))
 
-if sort == 0:
-    print(thislist[0])
-if sort == 1:
-    print(thislist[1])
-if sort == 2:
-    print(thislist[2])
-if sort == 3:
-    print(thislist[3])
+#if sort == 0:
+#   print(thislist[0])
+#if sort == 1:
+#    print(thislist[1])
+#if sort == 2:
+#    print(thislist[2])
+#if sort == 3:
+#    print(thislist[3])
+
+# append items to the list, everyday
+
+# guess-game com sequência de if's corrigida para elif's:
+
+#print("Welcome!")
+#guess = 0 
+#while guess != 5:
+#    g = input("Guess the number: ")
+#    guess = int(g)
+#    if guess == 5:
+#        print("You win! \n Congratulations!")
+#    elif guess == 4: 
+#            print("Hmmmm... it's getting hot...")
+#    elif guess == 3:
+#            print("Hmmmm... not so bad...")
+#    elif guess == 2:
+#            print("Ahhh... not this...")
+#    elif guess == 1: 
+#            print("Try again!")
+#    elif guess == 0: 
+#            print("It's really really cold...")
+#    elif guess == 6:
+#            print("Hmmmm... it's getting hot...")
+#    elif guess == 7: 
+#            print("Hmmmm...not so bad... ")
+#    elif guess == 8:
+#            print("Ahhh... not this...")
+#    elif guess == 9:
+#         print("Try again!")
+#    elif guess == 10:
+#            print("Stratosferic!...")
+#else:
+#    print("Game over!")
+
+# -> linux command list (via https://ss64.com/bash/)
+
+linux_list_commands_A_to_D = (" & 	Start a new process in the background",
+  	"alias 	Create an alias •",
+  	"apropos 	Search Help manual pages (man -k)",
+  	"apt 	Search for and install software packages (Debian/Ubuntu)",
+  	"apt-get 	Search for and install software packages (Debian/Ubuntu)",
+  	"aptitude 	Search for and install software packages (Debian/Ubuntu)",
+  	"aspell 	Spell Checker",
+  	"at 	Schedule a command to run once at a particular time",
+  	"awk 	Find and Replace text, database sort/validate/index", 	  	 
+  	"basename 	Strip directory and suffix from filenames",
+  	"base32 	Base32 encode/decode data and print to standard output",
+  	"base64 	Base64 encode/decode data and print to standard output",
+  	"bash 	GNU Bourne-Again SHell",
+  	"bc 	Arbitrary precision calculator language",
+  	"bg 	Send to background",
+  	"bind 	Set or display readline key and function bindings •",
+  	"break 	Exit from a loop •",
+  	"builtin 	Run a shell builtin",
+  	"bzip2 	Compress or decompress named file(s)",  	 
+  	"cal 	Display a calendar",
+  	"caller 	Return the context of any active subroutine call •",
+  	"case 	Conditionally perform a command",
+  	"cat 	Concatenate and print (display) the content of files",
+  	"cd 	Change Directory",
+  	"cfdisk 	Partition table manipulator for Linux",
+  	"chattr 	Change file attributes on a Linux file system",
+  	"chgrp 	Change group ownership",
+  	"chmod 	Change access permissions",
+  	"chown 	Change file owner and group",
+  	"chpasswd 	Update passwords in batch mode",
+  	"chroot 	Run a command with a different root directory",
+  	"chkconfig 	System services (runlevel)",
+  	"cksum 	Print CRC checksum and byte counts",
+  	"clear 	Clear terminal screen",
+  	"cmp 	Compare two files",
+  	"comm 	Compare two sorted files line by line",
+  	"command 	Run a command - ignoring shell functions •",
+  	"continue 	Resume the next iteration of a loop •",
+  	"cp 	Copy one or more files to another location",
+  	"cpio 	Copy files to and from archives",
+  	"cron 	Daemon to execute scheduled commands",
+  	"crontab 	Schedule a command to run at a later time",
+  	"csplit 	Split a file into context-determined pieces",
+  	"curl 	Transfer data from or to a server",
+  	"cut 	Divide a file into several parts", 	  	 
+  	"date 	Display or change the date & time",
+  	"dc 	Desk Calculator",
+  	"dd 	Data Duplicator - convert and copy a file, write disk headers, boot records",
+  	"ddrescue 	Data recovery tool",
+  	"declare 	Declare variables and give them attributes •",
+  	"df 	Display free disk space",
+  	"diff 	Display the differences between two files",
+  	"diff3 	Show differences among three files",
+  	"dig 	DNS lookup",
+  	"dir 	Briefly list directory contents",
+  	"dircolors 	Colour setup for 'ls'",
+  	"dirname 	Convert a full pathname to just a path",
+  	"dirs 	Display list of remembered directories",
+  	"dos2unix 	Windows/MAC to UNIX text file format converter",
+  	"dmesg 	Print kernel & driver messages",
+  	"dpkg 	Package manager (Debian/Ubuntu).",
+  	"du 	Estimate file space usage")
+
+print(len(linux_list_commands_A_to_D))
+i = 0
+while i < len(linux_list_commands_A_to_D):
+  print(linux_list_commands_A_to_D[i])
+  i = i + 1
+
+# List is a collection which is ordered and changeable. Allows duplicate members. 
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members. 
+# Set is a collection which is unordered, unchangeable, and unindexed. No duplicate members. 
+# Dictionary is a collection which is ordered and changeable. No duplicate members. 
+# As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. 
+
+
+
+
+
+
 
 
 
