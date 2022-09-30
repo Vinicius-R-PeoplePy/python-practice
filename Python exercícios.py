@@ -442,7 +442,7 @@
 #    elif guess == 8:
 #            print("Ahhh... not this...")
 #    elif guess == 9:
-#         print("Try again!")
+#            print("Try again!")
 #    elif guess == 10:
 #            print("Stratosferic!...")
 #else:
@@ -525,8 +525,25 @@ while i < len(linux_list_commands_A_to_D):
 # Dictionary is a collection which is ordered and changeable. No duplicate members. 
 # As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. 
 
+# via https://www.w3schools.com/python/python_lists_methods.asp : 
 
+#List Methods 
 
+#Python has a set of built-in methods that you can use on lists. 
+
+#append(). Adds an element at the end of the list
+#clear(). Removes all the elements from the list 
+#copy(). Returns a copy of the list 
+#count() Returns the number of elements with the speciefied value
+#extend(). Add the elements of a list (or any iterable), to the end of the current list
+#index(). Returns the index of the first element with the specified value
+#insert(). Adds an element at the specified position
+#pop(). Removes the element at the specified position 
+#remove(). Removes the item with the specified value 
+#reverse(). Reverses the order of the list 
+#sort(). Sorts the list
+# fruits = ["apple, "banana", "cherry"]
+# fruits.insert(1, "lemon)") -> to add "lemon" as the second item in the fruits list.
 
 
 
