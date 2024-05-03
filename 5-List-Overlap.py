@@ -15,7 +15,7 @@ of different sizes.
 
 Extras: 
 1. Randomly generate two lists to test this 
-2. Write this is one line of Python
+2. Write this in one line of Python
 (don't worry if you can't figure this out at this point)
 
 List properties 
