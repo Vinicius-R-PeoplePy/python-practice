@@ -12,7 +12,7 @@ print(response.text)
 # automation scripts. For instance,
 # Selenium can be used to navigate and interact
 # with JavaScript-heavy web pages, 
-# extract URLs or form dat 
+# extract URLs or form data
 # and then use Requests to make HTTP 
 # requests based on the extracted information. 
 '''
@@ -25,7 +25,7 @@ automation capabilities,
 but they exemplify the language's 
 versatility and power. 
 By understanding and leveraging these libraries,
-developers can automate a vast aray of tasks, making their workflows 
+developers can automate a vast array of tasks, making their workflows 
 more efficient and creative. 
 Whether it's automating web browsers with Selenium or 
 mastering HTTP requests with Requests, 
