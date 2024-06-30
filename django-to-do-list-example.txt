@@ -1,0 +1,75 @@
+1. Setting up Django 
+
+pip install django
+(within a virtualenv activated)
+
+-> create new project:
+django-admin startproject crm_automation 
+
+2. Creating an App: 
+
+-> inside crm_automation directory
+create a new app with 
+'python manage.py startapp data_entry'
+
+3. Models and Admin Site:
+
+Define a 'Customer' model in 'data_entry/models.py'
+that reflects the CRM's data structure. 
+Utilize Django's admin site to register 
+this model, enabling an interface to manage
+customer data directly. 
+
+4. Uploading CSV files: 
+
+Develop a form to upload CSV nfiles using 
+Django's form handling capabilities. 
+In 'data_entry/views.py',
+define a view that handles file upload
+and processes the CSV content. 
+
+5. Automating Data Entry: 
+
+Write a script within the view that 
+reads the CSV file, creates 'Customer' instances,
+and saves them to the database, effectively
+automating the data entry process. 
+
+6. Review and Refinement: 
+
+Use Django's testing tools for your data entry automation, 
+ensuring that the system behaves as expected. 
+
+By leveraging Django, devs can swiftly create 
+web automation tools that are both powerful 
+and maintainable. This framework not only streamlines 
+the development process but also offers a comprehensive 
+suite of tools and features that are indispensable for 
+modern web automation projects. 
+Whether it's automating data entry, 
+web scraping, or intracting with APIs,
+Django provides a solid foundation upon 
+which to build sophisticated web automation solutions. 
+
+-------
+
+Here are steps illustrating how to choose the right tool:
+
+1. Define Requirements: You need a tool that can handle dynamic content loaded by JavaScript, 
+manage cookies and sessions, 
+and mimic human browsing behavior to avoid detection. 
+
+2. Research Options: You identify several libraries and frameworks 
+suitable for web scrapping, 
+including Beautiful Soup, Scrapy, and Selenium. 
+
+3. Evaluate Against Criteria: 
+
+- Beautiful Soup is excellent for parsing HTML but lacks the ability to handle JavaScript.
+- Scrapy is a fast, high-level web crawling and scrapping framework 
+but might have a steeper learning curve and requires additional setup to handle JavaScript. 
+- Selenium allows for complete simulation of a web browser, including JavaScript rendering, making it the best fit for complex scraping tasks that involve dynamic content. 
+
+4. Decision: Considering the need to interact with JavaScript-heavy pages effectively, 
+you choose Selenium despite its slower performance and higher resource consumption as it meets the crucial project requirements. 
+
