@@ -26,7 +26,7 @@ def organize_files(directory):
                 
                 # Create a directory for the extension if it doesn't exist 
                 if not os.path.exists(os.path.join(directory, extension)):
-                    ps.lakedirs(os.path.join(directory, extension))
+                    os.makedirs(os.path.join(directory, extension))
                     
                 # Get full path of the file 
                 src_path = os.path.join(directory, file)
