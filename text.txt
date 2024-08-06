@@ -1,0 +1,5 @@
+Hello world
+Good aftenoon Have a drink of coffee 
+hahaha must fix the ventilator because it's getting hot
+install wine in linux to play with flstudio 
+refactor the code to allow score counting
