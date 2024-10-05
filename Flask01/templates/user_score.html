@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}User Score{% endblock %}
+
+{% block content %}
+<h2>Your Quiz Scores</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Correct Answers</th>
+            <th>Incorrect Answers</th>
+            <th>Percentage</th>
+            <th>Date Completed</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if scores %}
+            {% for score in scores %}
+            <tr>
+                <td>{{ score[0] }}</td>
+                <td>{{ score[1] }}</td>
+                <td>{{ score[2] | round(2) }}%</td>
+                <td>{{ score[3].strftime('%Y-%m-%d %H:%M:%S') }}</td>
+            </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td colspan="4">No scores available.</td>
+            </tr>
+        {% endif %}
+    </tbody>
+    
+</table>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+
+{% endblock %}

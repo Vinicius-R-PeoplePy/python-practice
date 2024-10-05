@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Python Fundamentals Quiz
+{% endblock %}
+
+{% block content %}
+<body>
+    <a href="{{ url_for('index') }}">
+        <h1>Quiz World</h1>
+    </a>
+    <h2>Python Intermediary Quiz</h2>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container"></div>
+
+    <!-- Question Container -->
+    <div id="question-container">
+        <p id="question-text"></p>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+
+        <!-- Dropdown for answers -->
+         <select id="answer-select">
+            <option id="option" value="">Select your answer</option>
+         </select>
+    </div>
+    
+    <!-- Background with floating question marks -->
+    <div class="background">
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+
+    </div>
+
+    <!-- Navigation buttons for next and previous -->
+    <div id="button-container">
+        <button id="prev-button" class="btn">🢤</button>
+        <button id="next-button" class="btn">🢣</button>
+    </div>
+
+    <!-- Button to toggle effects -->
+    <div>
+        <button id="toggle-effect">Toggle Question Marks</button>
+    </div>
+
+    <!-- Display tracking info: current question number, correct answers, incorrect answers-->
+    <div id="tracking-info">
+        <p>Current Question Number: <span id="current-question-number"></span></p>
+        <p>Correct Answers: <span id="correct-answers">0</span></p>
+        <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+    </div>
+
+    <!-- Store current question index -->
+    <input type="hidden" id="current-question-index" value="32">
+
+
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Quiz World</h1>
+    <div class="home">
+    <!-- div class="spaced-element"-->
+        <!-- edit in css above-->
+        <div class="button-container">
+            <h3>Python Fundamentals<br>Quiz</h3>
+            <br>
+            <img src="static/img/python-logo.png" alt="python-logo">
+            <br>
+        <a href="{{ url_for('quiz') }}" class="link-button">Start Quiz</a>
+        </div>
+        
+        <div class="button-container-2">
+            <h3>Python Intermediary <br>Quiz</h3>
+            <br>
+            <img src="static/img/python-logo.png" alt="python-logo">
+            <br>
+        <a href="{{ url_for('intermediary') }}" class="link-button">Start Quiz</a>
+       </div>    
+   
+    </div>
+
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://github.com/staycoldvr" target="_blank">
+            <img src="{{ url_for('static', filename='img/github-logo.png') }}" alt="Github" class="footer-link"></a>
+        <a href="https://discordapp.com/channels/1280209735383257129/1280209735383257133" target="_blank">
+            <img src="{{ url_for('static', filename='img/discord-logo.png') }}" alt="Discord" class="footer-link">
+        </a>
+        <div class="credits">
+            <p>staycoldVR&reg;, 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'PixelifySansRegular';
+    src: url('/static/fonts/PixelifySans-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: darkblue;
+    font-variant: 'OCR A Std', monospace;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    /*overflow: hidden; Can Ensure no scrollbars */
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white; 
+    text-align: center;
+    font-family: 'PixelifySansRegular', sans-serif;
+    background-color: black;
+}
+
+h2 {
+    color: yellow;
+    font-variant: 'OCR A Std', monospace;
+    box-shadow: 10px 5px 10px 10px black;
+    text-align: center;
+}
+
+select {
+    color: green;
+    font-size: 20pt;
+    background-color: black;
+    z-index: 2; /*Set higher z-index */
+}
+
+
+#button-container {
+    text-align: center;
+    z-index: 2; /* Ensure buttons are above background */
+    position: relative;
+    
+}
+
+
+#question-text {
+    font-size: 30pt;
+    font-weight: bolder;
+    font-variant: 'OCR A Std', monospace;
+    color: aliceblue;
+}
+
+#prev-button, #next-button {
+    font-size: 30pt;
+    font-weight: 30px;
+}
+
+option {
+    color: green;
+    font-size: 20pt;
+    background-color: black;
+}
+
+
+/* Center the tracking-info below the buttons */
+#tracking-info {
+    color: green;
+    background-color: black;
+    font-size: 25pt;
+    margin-top: 20px; /* Space between buttons and tracking info */
+    text-align: center;
+    z-index: 3; /*Set higher z-index */
+    position: relative;
+}
+
+
+#correct-answers {
+    color: #1fff26;
+    z-index: 3; /*Set higher z-index */
+    position: relative;
+}
+
+#incorrect-answers {
+    color: #ff0000;
+    z-index: 3; /*Set higher z-index */
+    position: relative;
+}
+
+.email, .username, .password {
+    color: yellow;
+}
+
+#flashmessages {
+    color: yellow;
+}
+
+.formdata {
+    display: inline-table;
+    text-align: right;
+
+}
+
+#currentuser {
+    background-color: azure;
+}
+
+/* Apply Flexbox to the background container */
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkblue; /* Background color */
+    position: absolute;
+    overflow: hidden; /* Ensures content stays within bounds */
+    z-index: 1; /* Set lower z-index */
+}
+
+.question-mark {
+    position: absolute;
+    font-size: 3rem;
+    color: yellow;
+    animation: flash 1s infinite, move 15s infinite;
+    z-index: 1; /* Set lower z-index */
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    100% { transform: translate(100px, 100px) rotate(360deg) scale(1.5); }
+}
+  
+.question-mark:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+
+.question-mark:nth-child(2) {
+    top: 30%;
+    left: 50%;
+}
+
+.question-mark:nth-child(3) {
+    top: 70%;
+    left: 80%;
+}
+
+.question-mark:nth-child(4) {
+    top: 50%;
+    left: 10%;
+}
+
+.question-mark:nth-child(5) {
+    top: 10%;
+    left: 20%;
+}
+
+.question-mark:nth-child(6) {
+    top: 30%;
+    left: 50%;
+}
+
+.question-mark:nth-child(7) {
+    top: 70%;
+    left: 80%;
+}
+
+.question-mark:nth-child(8) {
+    top: 50%;
+    left: 10%;
+}
+
+.question-mark:nth-child(9) {
+    top: 10%;
+    left: 20%;
+}
+
+.question-mark:nth-child(11) {
+    top: 30%;
+    left: 50%;
+}
+
+.question-mark:nth-child(12) {
+    top: 70%;
+    left: 80%;
+}
+
+.question-mark:nth-child(13) {
+    top: 50%;
+    left: 10%;
+}
+
+.question-mark:nth-child(14) {
+    top: 10%;
+    left: 20%;
+}
+
+.question-mark:nth-child(15) {
+    top: 30%;
+    left: 33%;
+}
+
+.question-mark:nth-child(16) {
+    top: 77%;
+    left: 88%;
+}
+
+.question-mark:nth-child(17) {
+    top: 54%;
+    left: 17%;
+}
+
+  
+.hidden { display: none; }/* class selector; target any html element that has such class name */
+.disabled { background-color: gray; cursor: not-allowed; }
+.btn { padding: 10px 20px; margin: 10px; cursor: pointer; position: relative; z-index: 3;}
+
+#toggle-effect { 
+    font-size: 16pt;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: green; 
+    color: white; 
+    border: none;  
+    border-radius: 5px;
+    z-index: 3;
+    position: relative;
+}
+
+#toggle-effect:hover {
+    background-color: darkgreen;
+}
+
+
+
+

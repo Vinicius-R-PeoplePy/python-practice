@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Python Fundamentals Quiz
+{% endblock %}
+
+{% block content %}
+<body>
+    <a href="{{ url_for('index') }}">
+        <h1>Quiz World</h1>
+    </a>
+    <h2>Python Fundamentals Quiz</h2>
+    
+    <div id="quiz-container"></div>
+    
+    <div id="question-container">
+        <p id="question-text"></p>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <select id="answer-select">
+            <option id="option" value="">Select your answer</option>
+            <!-- Options will be dynamically added here -->
+        </select>
+    </div>
+
+    <div class="background">
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <span class="question-mark">?</span>
+        <!-- Add more question marks as needed -->
+    </div>
+
+    <div id="button-container">
+        <button id="prev-button" class="btn">🢤 </button>
+        <button id="next-button" class="btn disabled">🢣</button>
+    </div>
+
+
+    <div>
+        <button id="toggle-effect">Toggle Question Marks</button>
+        <button id="submit-score" onclick="submitScore(correctAnswers, incorrectAnswers)">Submit Score</button>
+    </div>
+
+
+    <!-- Elements to display current question number and answer stats -->
+    <div id="tracking-info">
+        <p>Current Question Number: <span id="current-question-number"></span></p>
+        <p>Correct Answers: <span id="correct-answers">0</span></p>
+        <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+    </div>
+
+    <!-- Hidden section for the "Quiz ended!" message -->
+     <div id="quiz-ended" style="display: none;">
+        <h2>Quiz ended!</h2>
+     </div> 
+
+    
+
+    <!-- Store current question index in a hidden input -->
+    <input type="hidden" id="current-question-index" value="0">
+{% endblock %}
+</body>
+</html>
